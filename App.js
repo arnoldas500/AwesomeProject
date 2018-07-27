@@ -22,12 +22,16 @@ export default class App extends Component<Props> {
         let pic = {
             uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
         };
+        let pic1 = {
+                    uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
+                };
         return (
 
 
             <View style={styles.container}>
                 <Image source={pic} style={{width: 193, height: 110}}/>
-                <Text style={styles.welcome}>This is an awesome appppp!</Text>
+                <Image source={pic1} style={{width: 193, height: 110}}/>
+                <Text style={styles.welcome}>This is an awesome banana!</Text>
                 <Text style={styles.instructions}>To get started, edit App.js</Text>
                 <Text style={styles.instructions}>{instructions}</Text>
             </View>
